@@ -26,4 +26,5 @@ for(let i = 0; i < Array.from(slides.children).length; i++) {
     paginationUl.appendChild(paginationLi);
     
 }
+// set active data attribute to first bullet
 document.querySelector(".paginationLi").setAttribute("data-active", "")
