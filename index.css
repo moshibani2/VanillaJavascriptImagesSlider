@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+}
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  transition: 200ms opacity ease-in-out;
+}
+.slide[data-active] {
+  opacity: 1;
+  z-index: 11;
+}
+.slide > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-btn {
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+  font-size: 3em;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.carousel-btn.prev {
+  top: 50%;
+  left: 10px;
+}
+.carousel-btn.next {
+  top: 50%;
+  right: 10px;
+}
+.pagination-ul {
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  z-index: 10000000000000000;
+  text-align: center;
+  bottom: 10px;
+  left: 40%;
+}
+
+.pagination-ul > li {
+  background-color: #f6f6f6;
+  color: #333;
+  font-weight: bold;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+}
+.pagination-ul > li[data-active] {
+  background-color: #009688;
+}

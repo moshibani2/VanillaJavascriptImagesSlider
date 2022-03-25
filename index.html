@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <script src="script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <!-- first we need to make a container that will have all of our element in it-->
+  <div class="carousel" data-carousel="">
+    <!-- here's the buttons(I used fontawesome library) -->
+    <button class="carousel-btn prev" data-carousel-button="prev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="carousel-btn next" data-carousel-button="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+    <!-- here we gonna have a ul for our images -->
+    <ul class="carousel-slides" data-slides="">
+      <li class="slide" data-active="">
+        <img src="imgs/bmw_e90_deep_concave_black_helicopter_94623_1600x900.jpg" alt="">
+      </li>
+      <li class="slide">
+        <img src="imgs/bmw_i8_front_view_concept_111629_1600x900.jpg"  alt="">
+      </li>
+      <li class="slide">
+        <img src="imgs/bmw_m5_black_side_view_104943_1600x900.jpg" alt="">
+      </li>
+      <li class="slide">
+        <img src="imgs/bmw_rear_view_headlight_130025_1600x900.jpg" alt="">
+      </li>
+      <li class="slide">
+        <img src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+      </li>
+      <li class="slide">
+        <img src="imgs/ideas.png" alt="">
+      </li>
+      <!-- just for testing -->
+    </ul>
+    <ul class="pagination-ul">
+      <!-- <li class="paginationLi" data-pagination-li="" data-active="">1</li>
+      <li class="paginationLi" data-pagination-li="">2</li>
+      <li class="paginationLi" data-pagination-li="">3</li>
+      <li class="paginationLi" data-pagination-li="">4</li> -->
+    </ul>
+  </div>
+</body>
+</html>
