@@ -1,2 +1,2 @@
 # VanillaJavascriptImagesSlider
- Vanilla javascript images slider
+ Vanilla javascript images slidre
